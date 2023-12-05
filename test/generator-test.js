@@ -28,7 +28,7 @@ describe('test extension generation', function () {
     it('generate the hello world extension', function (done) {
         const name = 'hello-world-test';
         helpers.run(path.join(__dirname, '../generators/app'))
-            .withPrompts({
+            .withAnswers({
                 type: 'hello-world',
                 name
             })
